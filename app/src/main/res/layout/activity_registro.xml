@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_registro_reportero"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="1dp"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="mx.com.hugoflores.appnoticias.Registro"
+    android:weightSum="1">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_weight=".8">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/scroll"
+            android:layout_weight="1"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="65dp">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:layout_weight="1"
+                android:orientation="vertical"
+                >
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:hint="Correo electronico"
+                    android:drawableBottom="@color/colorPrimary"
+                    android:id="@+id/etEmail" />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:hint="Nombre de Usuario"
+                    android:id="@+id/etUsername"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:hint="Contraseña mayor 6 digitos"
+                    android:id="@+id/etPassword"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:hint="Compruebe contraseña"
+                    android:id="@+id/etPassword2"/>
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/black"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:hint="Municipio"
+                    android:id="@+id/eTown"/>
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:id="@+id/rSpMunicipio"
+                    />
+
+
+
+
+            </LinearLayout>
+        </ScrollView>
+
+    </RelativeLayout>
+
+
+
+    <ProgressBar
+        style="?android:attr/progressBarStyle"
+        android:layout_width="209dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:progress="0"
+        android:visibility="gone"
+        android:id="@+id/rePrbLoad" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Registrar"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:background="@drawable/ic_borde"
+            android:id="@+id/btRegistrarReportero" />
+    </RelativeLayout>
+
+
+</LinearLayout>

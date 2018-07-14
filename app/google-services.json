@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "931766730597",
+    "firebase_url": "https://mexquinoticias.firebaseio.com",
+    "project_id": "mexquinoticias",
+    "storage_bucket": "mexquinoticias.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:931766730597:android:1dbe749f39d61af3",
+        "android_client_info": {
+          "package_name": "mx.com.hugoflores.appnoticias"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "931766730597-4868bs63t4dg366motj1e2b29o78hvd4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBJECrKeapQdhBdHpACLOqsmIFEfSg0InY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

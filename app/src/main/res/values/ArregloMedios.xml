@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="marcas_auto">
+        <item>Toyota</item>
+        <item>Nissa</item>
+        <item>Caracol</item>
+        <item>Pegostioso</item>
+    </string-array>
+</resources>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="mx.com.hugoflores.appnoticias">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-feature android:name="android.hardware.camera.any" />
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:name=".Aplicacion"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="MexquiNoticias"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Registro" />
+        <activity
+            android:name=".MainActivity"
+            android:label="MexquiNoticias"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".segunda" />
+        <activity android:name=".Login" />
+        <activity android:name=".Noticias" />
+        <activity android:name=".ConsultaAva" />
+        <activity android:name=".showConsultaAva" />
+        <activity android:name=".AgregarNoticias" />
+        <activity
+            android:name=".Noticias_Deatalles"
+            android:label="@string/title_activity_noticias__deatalles"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Comentarios"
+            android:theme="@style/Theme.AppCompat.DayNight.Dialog" />
+        <activity
+            android:name=".Editar"
+            android:theme="@style/Theme.AppCompat.DayNight.Dialog" />
+        <activity
+            android:name=".SplashScreen"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service android:name=".FirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".FirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <!-- android:theme="@style/Theme.AppCompat.NoActionBar" -->
+        <activity android:name=".publicarReportero" />
+        <activity
+            android:name=".Autoriza"
+            android:label="@string/title_activity_autoriza"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+    </application>
+
+</manifest>

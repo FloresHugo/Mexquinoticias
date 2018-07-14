@@ -1,0 +1,78 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="mx.com.hugoflores.appnoticias.NotificarFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Suceso:"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:hint="¿Qué pasó?"
+            android:id="@+id/ntEdSuceso"/>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="horizontal">
+
+        <EditText
+            android:layout_width="273dp"
+            android:layout_height="104dp"
+            android:hint="Referencias del lugar en donde sucedieron los hechos"
+            android:id="@+id/ntEdLugar"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:paddingLeft="10dp"
+            android:layout_toEndOf="@+id/textView6" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lugar de los hechos:"
+            android:id="@+id/textView6"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="24dp" />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+       <Button
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:id="@+id/ntBtImagen"
+           android:visibility="gone"
+           android:drawableBottom="@drawable/ic_menu_camera"
+           android:text="Agregar Imagen"/>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ntBtNotificar"
+        android:text="Notificar"
+        android:enabled="false"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"/>
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:id="@+id/ntPbLoad"/>
+
+
+</LinearLayout>

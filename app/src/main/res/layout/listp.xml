@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f0f0f0"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:background="@android:drawable/screen_background_light_transparent"
+        android:weightSum="1">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="177dp"
+            android:background="@drawable/post_border_background"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.10"
+                android:id="@+id/frameLayout">
+
+                <!--ImageView
+                    android:layout_width="95dp"
+                    android:layout_height="98dp"
+                    app:srcCompat="@mipmap/ic_launcher"
+                    android:id="@+id/lpImv" /-->
+                <com.github.snowdream.android.widget.SmartImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="178dp"
+                    android:src="@drawable/background"
+                    android:id="@+id/lpImv"
+                    />
+            </FrameLayout>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:background="@drawable/detallenoticia"
+                android:layout_marginBottom="1dp">
+
+                <LinearLayout
+                    android:orientation="vertical"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:text="Titulo"
+                        android:textStyle="bold"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#FFFFFF"
+                        android:id="@+id/lpTvTitulo" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/lpTvID"
+                        android:visibility="gone"/>
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:text="Fecha"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="#FFFFFF"
+                            android:id="@+id/lpTvFecha" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#FFFFFF"
+                            android:text=" | "/>
+
+                        <TextView
+                            android:text="Reportero"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="#FFFFFF"
+                            android:id="@+id/lpTvReportero" />
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <!--LinearLayoutkakakakakkka
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Comentar"
+            android:background="@android:color/transparent"
+            android:id="@+id/lpBtnComentar"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:layout_weight="1"
+            android:text="Ver Noticia"
+            android:id="@+id/lpBtnVerNoticia"/>
+    </LinearLayout-->
+
+
+</LinearLayout>

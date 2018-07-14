@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_noticias__deatalles"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="5dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingTop="5dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="mx.com.hugoflores.appnoticias.Noticias_Deatalles"
+    tools:showIn="@layout/activity_noticias__deatalles"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ndTvTitulo"
+        android:text=""
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:textAlignment="center"/>
+    <!--ImageView
+        android:layout_width="match_parent"
+        android:layout_height="177dp"
+        android:id="@+id/ndIvImagen"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"/-->
+    <com.github.snowdream.android.widget.SmartImageView
+        android:layout_width="match_parent"
+        android:layout_height="177dp"
+        android:id="@+id/ndSImagen"
+        />
+    <ProgressBar
+        android:layout_width="209dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:progress="0"
+        android:id="@+id/ndPrbLoad"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="9pt"
+            android:id="@+id/ndTvNoticia"
+            android:textColor="#000000"/>
+    </ScrollView>
+
+</LinearLayout>
